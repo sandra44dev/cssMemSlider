@@ -95,10 +95,12 @@ input {
     background-color: rgba(205, 201, 227, 0.578);
     box-sizing: border-box;
     transition: 0.2s ease-in-out;
+    user-select: none;
 }
 
 .controls__item:hover .btn {
     background-color: rgb(190, 183, 227);
+    cursor: pointer;
 }
 
 .controls__item:active .btn {
@@ -162,6 +164,8 @@ input {
 #radio-4:checked~.slides__footer .text .text-1 {
     margin-top: -4.5rem;
 }
+
+/* mobile version */
 
 @media only screen and (max-width: 1200px) {
     .slides {
