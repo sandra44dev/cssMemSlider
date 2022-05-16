@@ -15,13 +15,27 @@ input {
 }
 
 .slides {
-    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 30vw;
 }
 
-/* .slides__item {} */
+.slides__container {
+    display: flex;
+    gap: 20%;
+    transform: translateX(0);
+    transition: 0.4s ease-out;
+}
+
+.slides__item {
+    /* padding: 0 40%;
+    margin: 0 -20%; */
+    display: block;
+}
 
 .slides__img {
-    height: 10rem;
+    width: 30vw;
+    padding: 0 0;
 }
 
 /* text */
@@ -68,6 +82,8 @@ input {
     background-color: rgb(155, 145, 209);
 }
 
+/* change buttons on click */
+
 #radio-1:checked~.controls .control-item-1 .btn {
     background-color: rgb(193, 196, 209);
     border: 0.6rem solid rgba(130, 115, 205, 0.747);
@@ -86,4 +102,22 @@ input {
 #radio-4:checked~.controls .control-item-4 .btn {
     background-color: rgb(193, 196, 209);
     border: 0.6rem solid rgba(130, 115, 205, 0.747);
+}
+
+/* change images on click on buttons */
+
+#radio-1:checked~.slides .slides__container {
+    transform: translateX(0);
+}
+
+#radio-2:checked~.slides .slides__container {
+    transform: translateX(-120%);
+}
+
+#radio-3:checked~.slides .slides__container {
+    transform: translateX(-240%);
+}
+
+#radio-4:checked~.slides .slides__container {
+    transform: translateX(-360%);
 }
