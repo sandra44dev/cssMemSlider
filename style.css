@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(49, 52, 51);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 5% auto;
+    flex-direction: column;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+}
+
+.slides__item {}
+
+.slides__img {
+    height: 10rem;
+}
+
+.controls {
+    display: flex;
+    width: 10rem;
+    gap: 0.5rem;
+
+}
+
+.controls__item {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    border: 2px solid #d2d2d2;
+    box-sizing: border-box;
+}
